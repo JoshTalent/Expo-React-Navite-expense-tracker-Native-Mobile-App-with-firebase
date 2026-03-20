@@ -6,8 +6,10 @@ import Button from '../UI/Button';
 import { getFormattedDate } from '../../util/date';
 import { GlobalStyles } from '../../constants/styles';
 
+
 function ExpenseForm({ submitButtonLabel, onCancel, onSubmit, defaultValues }) {
   const [inputs, setInputs] = useState({
+    
     amount: {
       value: defaultValues ? defaultValues.amount.toString() : '',
       isValid: true,
@@ -20,6 +22,7 @@ function ExpenseForm({ submitButtonLabel, onCancel, onSubmit, defaultValues }) {
       value: defaultValues ? defaultValues.description : '',
       isValid: true,
     },
+    
   });
 
   function inputChangedHandler(inputIdentifier, enteredValue) {
@@ -29,13 +32,16 @@ function ExpenseForm({ submitButtonLabel, onCancel, onSubmit, defaultValues }) {
         [inputIdentifier]: { value: enteredValue, isValid: true },
       };
     });
+    
   }
 
   function submitHandler() {
     const expenseData = {
+      
       amount: +inputs.amount.value,
       date: new Date(inputs.date.value),
       description: inputs.description.value,
+      
     };
 
     const amountIsValid = !isNaN(expenseData.amount) && expenseData.amount > 0;
