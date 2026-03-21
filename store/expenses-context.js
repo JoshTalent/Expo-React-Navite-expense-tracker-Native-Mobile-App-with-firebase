@@ -7,6 +7,7 @@ export const ExpensesContext = createContext({
   updateExpense: (id, { description, amount, date }) => {},
 });
 
+
 function expensesReducer(state, action) {
   switch (action.type) {
     case 'ADD':
@@ -18,6 +19,7 @@ function expensesReducer(state, action) {
       const updatableExpenseIndex = state.findIndex(
         (expense) => expense.id === action.payload.id
       );
+      
       const updatableExpense = state[updatableExpenseIndex];
       const updatedItem = { ...updatableExpense, ...action.payload.data };
       const updatedExpenses = [...state];
