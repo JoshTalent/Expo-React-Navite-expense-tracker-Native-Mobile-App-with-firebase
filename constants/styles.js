@@ -1,4 +1,5 @@
 export const GlobalStyles = {
+  
   colors: {
     primary50: '#e4d9fd',
     primary100: '#c6affc',
@@ -13,4 +14,5 @@ export const GlobalStyles = {
     gray500: '#39324a',
     gray700: '#221c30',
   },
+  
 };
