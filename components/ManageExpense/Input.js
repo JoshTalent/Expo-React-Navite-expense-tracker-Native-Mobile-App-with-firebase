@@ -1,5 +1,6 @@
 import { StyleSheet, Text, TextInp
 import { GlobalStyles } from '../../constants/styles';
+
 function Input({ label, invalid, style, textInputConfig }) {
   const inputStyles = [styles.input];
   if (textInputConfig && textInputConfig.multiline) {
@@ -16,9 +17,7 @@ function Input({ label, invalid, style, textInputConfig }) {
   );
 }
 
-
 export default Input;
-
 
 const styles = StyleSheet.create({
   inputContainer: {
