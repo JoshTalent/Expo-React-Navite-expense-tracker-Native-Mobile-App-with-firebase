@@ -6,6 +6,7 @@ import { getDateMinusDays } from '../util/date';
 import { fetchexpences } from '../util/http';
 import Loderspiner from '../components/UI/loderspiner';
 
+
 function RecentExpenses() {
   const [isfetching,setisfetching]=useState(true);
 const expensesCtx=useContext(ExpensesContext)
@@ -16,8 +17,10 @@ useEffect(()=>{
     setisfetching(false);
     expensesCtx.setExpences(expences);
   }
+  
   getexpences();
 },[])
+  
 if(isfetching){
  return <Loderspiner/>
 }
