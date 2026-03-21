@@ -14,7 +14,9 @@ function IconButton({ icon, size, color, onPress }) {
   );
 }
 
+
 export default IconButton;
+
 
 const styles = StyleSheet.create({
   buttonContainer: {
@@ -26,4 +28,5 @@ const styles = StyleSheet.create({
   pressed: {
     opacity: 0.75,
   },
+  
 });
