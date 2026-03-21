@@ -4,6 +4,7 @@ const response=await axios.post('your api key',expencedata);
 const id=response.data.name;
 return id;
 }
+
 export async function  fetchexpences(){
   const response=await axios.get('your api key');
   const expences=[];
@@ -16,14 +17,16 @@ export async function  fetchexpences(){
     };
     expences.push(expenseobj);
   }
-  return expences;
+  
+  re
+    turn expences;
 }
 export async function updateexpense(id,expencedata){
  return axios.put(`your api key`,expencedata)
-
 }
+
 export async function deleteexpense(id){
  return axios.delete(`your api key`)
-
 }
+
 export default storeexpence;
