@@ -8,6 +8,7 @@ import { GlobalStyles } from '../constants/styles';
 import { ExpensesContext } from '../store/expenses-context';
 import storeexpence, { deleteexpense, updateexpense } from '../util/http';
 
+
 function ManageExpense({ route, navigation }) {
   const expensesCtx = useContext(ExpensesContext);
 
@@ -18,6 +19,7 @@ function ManageExpense({ route, navigation }) {
     (expense) => expense.id === editedExpenseId
   );
 
+  
   useLayoutEffect(() => {
     navigation.setOptions({
       title: isEditing ? 'Edit Expense' : 'Add Expense',
