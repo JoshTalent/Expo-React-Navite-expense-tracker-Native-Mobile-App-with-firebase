@@ -6,18 +6,20 @@ import Button from '../UI/Button';
 import { getFormattedDate } from '../../util/date';
 import { GlobalStyles } from '../../constants/styles';
 
-
 function ExpenseForm({ submitButtonLabel, onCancel, onSubmit, defaultValues }) {
+  
   const [inputs, setInputs] = useState({
     
     amount: {
       value: defaultValues ? defaultValues.amount.toString() : '',
       isValid: true,
     },
+    
     date: {
       value: defaultValues ? getFormattedDate(defaultValues.date) : '',
       isValid: true,
     },
+    
     description: {
       value: defaultValues ? defaultValues.description : '',
       isValid: true,
