@@ -5,7 +5,6 @@ import { ExpensesContext } from '../store/expenses-context';
 
 function AllExpenses() {
   const expensesCtx = useContext(ExpensesContext);
-
   
   return (
     <ExpensesOutput
