@@ -16,5 +16,5 @@ function ExpensesList({ expenses }) {
   );
   
 }
-\
+
 export default ExpensesList;
