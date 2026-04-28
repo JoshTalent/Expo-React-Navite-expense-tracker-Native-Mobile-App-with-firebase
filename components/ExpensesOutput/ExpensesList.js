@@ -15,7 +15,6 @@ function ExpensesList({ expenses }) {
       keyExtractor={(item) => item.id}
     />
   );
-
 }
 
 export default ExpensesList;
