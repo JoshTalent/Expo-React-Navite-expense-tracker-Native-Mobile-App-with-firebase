@@ -1,6 +1,7 @@
 import { Pressable, View,StyleSheet,Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { GlobalStyles } from "./Constants/style";
+
 export function Expanaceitemdetail({description,amount,date,id}){
     const navigation=useNavigation();
     function expenceitemhandel(){
