@@ -11,6 +11,7 @@ import { GlobalStyles } from './constants/styles';
 import IconButton from './components/UI/IconButton';
 import ExpensesContextProvider from './store/expenses-context';
 
+
 const Stack = createNativeStackNavigator();
 const BottomTabs = createBottomTabNavigator();
 
