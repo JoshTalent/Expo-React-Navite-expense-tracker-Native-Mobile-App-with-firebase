@@ -1,3 +1,4 @@
+
 import { Pressable, View,StyleSheet,Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { GlobalStyles } from "./Constants/style";
@@ -8,6 +9,7 @@ export function Expanaceitemdetail({description,amount,date,id}){
         
         navigation.navigate('Manageexpenses',{expenceid:id});
     }
+    
     return<Pressable onPress={expenceitemhandel} style={({pressed})=>pressed && styles.pressed}>
            <View style={styles.container}>
            <View>
