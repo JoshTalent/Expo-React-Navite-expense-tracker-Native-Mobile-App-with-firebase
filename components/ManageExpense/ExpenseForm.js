@@ -8,7 +8,6 @@ import { GlobalStyles } from '../../constants/styles';
 
 function ExpenseForm({ submitButtonLabel, onCancel, onSubmit, defaultValues }) {
 
-  
   const [inputs, setInputs] = useState({
 
     amount: {
