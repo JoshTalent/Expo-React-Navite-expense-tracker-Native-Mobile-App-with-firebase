@@ -23,7 +23,6 @@ export function Expanaceitemdetail({description,amount,date,id}){
            </View>
               
         </Pressable>
-          
     
 }
 const styles=StyleSheet.create({
