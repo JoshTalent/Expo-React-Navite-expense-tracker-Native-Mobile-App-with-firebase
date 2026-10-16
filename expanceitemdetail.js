@@ -10,7 +10,6 @@ export function Expanaceitemdetail({description,amount,date,id}){
         navigation.navigate('Manageexpenses',{expenceid:id});
     }
     
-    
     return<Pressable onPress={expenceitemhandel} style={({pressed})=>pressed && styles.pressed}>
            <View style={styles.container}>
            <View>
